@@ -8,93 +8,55 @@
 </head>
 
 <body>
-       <nav>
-       <a href="index.html"> Home </a>
-        <a href="About"> About</a>
-    </nav>
+
+      <img class="logo" src="images/52486638_2241766992808790_5463673934996045824_n.png">
 
     <h1>Wonders of the World</h1>
 
 
 
     <main>
-        <article>
+       <!--- <article>
             <h1>Angkor Wat</h1>
             <p class="TypeOfWonder"> an acient temple city</p>
-            <img class="nature" src="images/nature.png">
+            <img class="nature" src="images/manbuild.png">
             <img src="images/ankorwat.jpg" alt="IMG" class="wonderimg">
 
             <img src="images/flag/cambodia.png" class="flag" alt="countryflag">
               <p class="price"> $$$</p>
             <h2>  </h2>
-            <p> Size: 208 hectares</p>
-            <p> Year: build in 1150 under the Khmer King Suryavarman II </p>
+            <p class="size"> Size: 208 hectares</p>
+            <p class="year"> Year: build in 1150 under the Khmer King Suryavarman II </p>
             <p class="funfact"> Fun Fact: Angkor Wat was shifted from Hindu to Buddhist use sometime around the late 13th century. The temple is still used by Buddhists as a place of worship today. </p>
+            <p> How jealous will your friends be,if you travel there?
+            <img src=""></p>
 
-
-
-
-
-
-        </article>
+        </article>-->
 
 
     </main>
 
-    <template id="myTemp">
-        <article>
-            <h1>NAME</h1>
-            <h2>PRICE</h2>
-            <img src="IMG" alt="IMG">
-            <button> MORE</button>
+    <template>
+           <article>
+            <h1 class="name">Angkor Wat</h1>
+            <p class="TypeOfWonder"> an acient temple city</p>
+            <img class="nature" src="images/manbuild.png">
+            <img src="images/ankorwat.jpg" alt="IMG" class="wonderimg">
+
+            <img src="images/flag/cambodia.png" class="flag" alt="countryflag">
+              <p class="price"> $$$</p>
+            <h2>  </h2>
+
+            <p class="size"> Size: 208 hectares</p>
+            <p class="year"> Year: build in 1150 under the Khmer King Suryavarman II </p>
+            <p class="funfact"> Fun Fact: Angkor Wat was shifted from Hindu to Buddhist use sometime around the late 13th century. The temple is still used by Buddhists as a place of worship today. </p>
+            <p> How jealous will your friends be,if you travel there?
+            <img src=""></p>
+
         </article>
     </template>
 
 
-    <!---- <article class="modal hide">
-       <button class="close-btn"> X </button>
-       <img src="" alt="">
-		    <h1> Name</h1>
-		    <p> Description</p>
 
-		</article>
-
-		<script>
-			const template = document.querySelector("#myTemp").content;
-			const main = document.querySelector("main");
-
-
-            const modal = document.querySelector(".modal");
-             const closeBtn = document.querySelector(".close-btn");
-            closeBtn.addEventListener("click",()=>modal.classList.add("hide"));
-
-
-            const imgLink ="https://kea-alt-del.dk/t5/site/imgs/";
-            const productlistList ="http://kea-alt-del.dk/t5/api/productlist"
-                   const productLink ="http://kea-alt-del.dk/t5/api/product?id="
-
-            fetch(productlistList).then(e=>e.json()).then(data=>data.forEach(showData))
-
-            function showData(oneObject){
-				let clone = template.cloneNode(true);
-				clone.querySelector("h1").textContent=oneObject.name;
-				clone.querySelector("h2").textContent=oneObject.price;
-				clone.querySelector("img").src=imgLink + "small/"+ oneObject.image + "-sm.jpg";
-				clone.querySelector("img").alt=oneObject.name;
-
-
-                clone.querySelector("button").addEventListener("click", ()=>{
-                    fetch(productLink+oneObject.id).then(e=>e.json()).then(data=>showDetails(data));
-                });
-
-				main.appendChild(clone);
-			}
-
-            function showDetails(product){
-                modal.querySelector("h1").textContent=product.name;
-                modal.querySelector("p").textContent=product.longdescription;
-                modal.classList.remove("hide")
-            }
-		</script> --->
 </body>
 </html>

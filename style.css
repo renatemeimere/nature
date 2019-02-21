@@ -1,21 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+.logo{
+    width: 100px;
 
-
-nav{
-    background-color: darkseagreen;
-    padding: 5px;
-    display: block;
-    margin: 0 auto;
-
-}
-
-nav a{
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    padding: 5px;
-    text-decoration: none;
-    color: white;
 }
 
 img {
@@ -72,4 +59,8 @@ h2 {
     position: absolute;
     top: 45px;
     right: 130px;
+}
+
+.wonderimg{
+    width: 100%;
 }
