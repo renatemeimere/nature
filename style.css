@@ -29,9 +29,7 @@ body {
     background-color: #e6e6e6;
 
 }
-main {
 
-}
 
 section {
     display: grid;
@@ -108,7 +106,7 @@ h1{
 
 }
 
-nav a {
+nav[role="second"] a {
     display: block;
     text-align: center;
     color: black;
