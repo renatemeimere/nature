@@ -146,7 +146,8 @@ h3 a {
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: 1500px;
+    max-width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     box-sizing: border-box;
 }
@@ -154,7 +155,7 @@ h3 a {
 .modal-content {
     background-color: white;
     width: 80%;
-    height: 80%;
+    height: 90%;
     margin-top: 5%;
     border: 3px solid #5B7553;
     border-radius: 10px;
@@ -177,13 +178,6 @@ h3 a {
     right: 20px;
 }
 
-.modal-state {
-    width: 100px;
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-}
-
 .modal-flag{
     width: 40px;
     position: absolute;
@@ -191,19 +185,30 @@ h3 a {
     top: 400px;
 }
 
+.modal-state {
+    width: 13%;
+    position: relative;
+    float: left;
+    top: 30%;
+    padding-right: 20px;
+}
+
 .modal-camera {
-    width: 120px;
-    position: absolute;
-    left: 150px;
-    bottom: 60px;
-    float: right;
+    width: 13%;
+    position: relative;
+    float: left;
+    top: 50%;
+        padding-right: 20px;
+
 }
 
 .modal-money {
-    width: 120px;
-    position: absolute;
-    right: 20px;
-    bottom: -60px;
+    width: 13%;
+    position: relative;
+    float: left;
+    top: 30%;
+        padding-right: 20px;
+
 }
 
 
@@ -212,6 +217,11 @@ h3 a {
     top: 450px;
 
 }
+
+.desc2 {
+    position: absolute;
+    top: 620px;
+    display: inline;
 }
 
 .wonderimg {
@@ -245,6 +255,8 @@ h3 a {
         margin-left: auto;
         margin-right: auto;
     }
+
+
 }
 
 .about {
@@ -266,8 +278,9 @@ h3 a {
 }
 
 .text{
-    padding: 0 140px 10px;
-}
+max-width: 100%;
+padding: 1% 10%;
+    }
 
 
 /*NAVIGATION*/
