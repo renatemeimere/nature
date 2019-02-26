@@ -1,6 +1,6 @@
 	const template = document.querySelector("template").content;
 	const main = document.querySelector("main");
-    const nav = document.querySelector("nav");
+    const h3 = document.querySelector("h3");
 	const modal = document.querySelector(".modal-bg");
 	modal.addEventListener("click", () => modal.classList.add("hide"));
 
@@ -30,7 +30,7 @@
             const link = document.createElement('a');
             link.textContent=row.gsx$category.$t;
             link.href="#"+row.gsx$category.$t;
-            nav.appendChild(link)
+            h3.appendChild(link)
         }
 
 
@@ -40,10 +40,11 @@
         modal.querySelector(".modal-wonderimg").src = "images/" + oneObject.gsx$image.$t;
         modal.querySelector(".modal-size").textContent = "Size: " + oneObject.gsx$size.$t;
 	    modal.querySelector(".modal-year").textContent = "Year: " + oneObject.gsx$yearbuild.$t;
-	    modal.querySelector(".modal-price").textContent = oneObject.gsx$expenses.$t;
 	    modal.querySelector(".modal-funfact").textContent = "Fun Fact: " + oneObject.gsx$funfacts.$t;
         modal.querySelector(".modal-state").src = "images/" + oneObject.gsx$state.$t;
-         modal.querySelector(".modal-flag").src = "images/flag/" + oneObject.gsx$location.$t;
+        modal.querySelector(".modal-camera").src = "images/" + oneObject.gsx$experience.$t;
+        modal.querySelector(".modal-money").src = "images/" + oneObject.gsx$expenses.$t;
+        modal.querySelector(".modal-flag").src = "images/flag/" + oneObject.gsx$location.$t;
         modal.classList.remove("hide");
     }
 
