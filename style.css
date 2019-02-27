@@ -4,7 +4,8 @@ html {
     scroll-behavior: smooth;}
 
 .header{
-    background-image: url(images/background.jpg);
+    background-image: url(images/background.jpg) ;
+    background-repeat: no-repeat;
     width: 100%;
     height: 200px;
     margin: 0;
@@ -70,8 +71,9 @@ article {
 
 
 h2 {
-    font-size: 20px;
+    font-size: 40px;
     text-transform: capitalize;
+    text-align: center;
 }
 
 .TypeOfWonder {
@@ -118,12 +120,9 @@ h3 a {
     text-transform: uppercase;
     font-size: 1.3em;
     display:block;
-    text-align: center;
 }
 
 
-#manbuild, #nature{
-    text-transform: uppercase;
 }
 
 
