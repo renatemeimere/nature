@@ -309,6 +309,34 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+#symbols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+.symbol-article {
+   border: 2px solid #5B7553;
+}
+
+.symbol-text {
+    margin-top: 0px;
+    font-size: 14px;
+
+}
+
+.symbol-text1 {
+    margin-top: -19px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.symbol-header {
+   color: #5B7553;
+    font-size: 23px;
+
+}
 /*.test{
     background-color: red;
     padding: 1em;
