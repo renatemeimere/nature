@@ -30,7 +30,9 @@
             const link = document.createElement('a');
             link.textContent=row.gsx$category.$t;
             link.href="#"+row.gsx$category.$t;
-            h3.appendChild(link)
+            const li = document.createElement('li');
+            li.appendChild(link)
+            document.querySelector(".dropout").appendChild(li)
         }
 
 

@@ -14,7 +14,7 @@ html {
 
 .logo{
     position: absolute;
-    top: 40%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 150px;
@@ -65,7 +65,7 @@ article {
 #wonders {
     text-align: center;
     position: relative;
-    bottom: 110px;
+    bottom: 90px;
     font-size: 2.5em;
 
 }
@@ -112,20 +112,32 @@ h1{
 
 }
 
+/*////////////// NAVIGATION //////////////*/
 
+nav ul li{
+    display: inline-block;
+}
 
-h3 a {
-    padding: 10px;
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.3em;
+nav ul li a:hover {
+  background-color: #5b7553;
+  color:#FFFFFF;
+}
+
+nav li ul{
+    display: none;
+}
+nav li:hover ul {
     display:block;
 }
 
+nav ul li ul li {
+text-transform: capitalize;
+  display: block;
+  float:none !important; /* newly added */
+  height:auto; /* newly added */
+  line-height:34px; /* newly added */
 
 }
-
 
 /* MOOOODAAAALLLLL*/
 
@@ -320,15 +332,19 @@ padding: 1% 10%;
 
 
 /*NAVIGATION*/
-ul {
+nav>ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+    position: absolute;
+    top:0;
+    z-index: 2;
   overflow: hidden;
-  background-color: #333;
+
 }
 
 li {
+    background-color: rgba(0,0,0, .4);
   float: left;
     padding-right: 20px;
 }
