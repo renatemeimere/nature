@@ -31,6 +31,12 @@ body {
 
 }
 
+#explanation{
+    text-align: center;
+    margin-top: -60px;
+    margin-bottom: 40px;
+}
+
 
 section {
     display: grid;
@@ -39,9 +45,10 @@ section {
 }
 
 section h2 {
+
     font-size: 25px;
     grid-column: 1/-1;
-    text-decoration: underline;
+    color: #253031;
 }
 
 article {
@@ -159,6 +166,7 @@ text-transform: capitalize;
 .modal-bg {
     position: fixed;
     top: 0;
+    overflow: scroll;
     left: 0;
     height: 100%;
     width: 1500px;
@@ -257,12 +265,15 @@ text-transform: capitalize;
 .desc{
     position: absolute;
     top: 450px;
+    left: 30%;
 
 }
 
 .desc2 {
     position: absolute;
     top: 600px;
+
+
     display: inline;
 }
 
@@ -332,7 +343,32 @@ padding: 1% 10%;
        #wonders{
         font-size: 30px;
     }
+
+    .modal-images img{
+        margin-top: 25px;
+        max-width: 50%;
+        height: auto;
 }
+
+    .desc{
+        position: absolute;
+        top: 120px;
+        left: 200px;
+    }
+
+    .desc3{
+        position: absolute;
+        left: 35%;
+    }
+
+    .desc2 {
+    position: absolute;
+    top: 350px;
+        left: 200px;
+}
+
+
+    }
 
 @media all and (min-width: 400px) {
     .wonderimg {
@@ -355,8 +391,8 @@ padding: 1% 10%;
     }
 
 .modal-images{
-    display: flex;
-    padding: 10px 100px;
+display: grid;
+
 }
 }
 
