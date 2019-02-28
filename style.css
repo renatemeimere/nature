@@ -14,7 +14,7 @@ html {
 
 .logo{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 150px;
@@ -65,9 +65,8 @@ article {
 #wonders {
     text-align: center;
     position: relative;
-
-    bottom: 70px;
-    font-size: 2em;
+    bottom: 110px;
+    font-size: 2.5em;
 
 }
 
@@ -255,30 +254,9 @@ h3 a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 
-
-@media all and (min-width: 400px) {
-    .wonderimg {
-        width: 80%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-
-@media all and (min-width: 831px) {
-    .wonderimg {
-        width: 80%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-}
+/*///////////////////////////// MEET THE TEAM /////////////////////////*/
 
 .about {
     text-align: center
@@ -292,6 +270,12 @@ h3 a {
     margin-right: auto;
 }
 
+.profile-name{
+    font-size: 25px;
+
+
+}
+
 .main-about {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -302,6 +286,37 @@ h3 a {
 max-width: 100%;
 padding: 1% 10%;
     }
+
+
+
+@media all and (max-width: 410px) {
+       #wonders{
+        font-size: 30px;
+    }
+}
+
+@media all and (min-width: 400px) {
+    .wonderimg {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+
+@media all and (min-width: 831px) {
+    .wonderimg {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
 
 
 /*NAVIGATION*/
