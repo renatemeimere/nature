@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 html {
-    scroll-behavior: smooth;}
+    scroll-behavior: smooth;
+}
 
-.header{
+.header {
     background-image: url(images/52998006_1034023670132010_5857440183120560128_n.jpg);
     background-repeat: no-repeat;
     width: 100%;
@@ -12,7 +13,7 @@ html {
     position: relative;
 }
 
-.logo{
+.logo {
     position: absolute;
     top: 48%;
     left: 50%;
@@ -31,7 +32,7 @@ body {
 
 }
 
-#explanation{
+#explanation {
     text-align: center;
     margin-top: -60px;
     margin-bottom: 40px;
@@ -65,11 +66,11 @@ article {
     font-size: 2.5em;
 }
 
-.manbuild{
+.manbuild {
     text-align: center;
     padding-bottom: auto;
     padding-top: 60px;
-        font-size: 2.5em;
+    font-size: 2.5em;
 }
 
 #wonders {
@@ -99,7 +100,7 @@ h2 {
     top: 35px
 }
 
-#more{
+#more {
     font-size: 20px;
     border-radius: 10px;
     cursor: pointer;
@@ -117,35 +118,120 @@ h2 {
 
 
 
-h1{
+h1 {
     color: #5b7553;
 
 }
 
 /*////////////// NAVIGATION //////////////*/
 
-nav ul li{
+/*NAVIGATION*/
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    overflow: hidden;
+    width: 100vw;
+    background-color: #253031;
+
+
+}
+
+li {
+    background-color: #253031;
+    float: left;
+    padding-right: 20px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+#symbols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+.symbol-article {
+    border: 2px solid #5B7553;
+}
+
+.symbol-text {
+    margin-top: 0px;
+    font-size: 14px;
+
+}
+
+.symbol-text1 {
+    margin-top: -19px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.symbol-header {
+    color: #5B7553;
+    font-size: 23px;
+
+}
+
+/*.test{
+    background-color: red;
+    padding: 1em;
+}
+.tooltiptext{
+    visibility: hidden;
+    opacity: 0;
+    padding: 1em;
+    background-color: white;
+}
+.modal-camera:hover {
+  border: 2px solid red;
+}/*
+.modal-camera:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}*/
+
+
+nav ul li {
     display: inline-block;
 }
 
 nav ul li a:hover {
-  background-color: #5b7553;
-  color:#FFFFFF;
+    background-color: #5b7553;
+    color: #FFFFFF;
 }
 
-nav li ul{
+nav li ul {
     display: none;
 }
+
 nav li:hover ul {
-    display:block;
+    display: block;
 }
 
 nav ul li ul li {
-text-transform: capitalize;
-  display: block;
-  float:none !important; /* newly added */
-  height:auto; /* newly added */
-  line-height:34px; /* newly added */
+    text-transform: capitalize;
+    display: block;
+    float: none !important;
+    /* newly added */
+    height: auto;
+    /* newly added */
+    line-height: 34px;
+    /* newly added */
 
 }
 
@@ -206,18 +292,19 @@ text-transform: capitalize;
     left: 30px;
 }*/
 
-.desc3{
-   position: absolute;
+.desc3 {
+    position: absolute;
     top: 55px;
     left: 45%;
 
 
 }
-.modal-name{
+
+.modal-name {
     text-align: center;
 }
 
-.modal-flag{
+.modal-flag {
     padding: 5px;
     width: 40px;
 
@@ -237,7 +324,7 @@ text-transform: capitalize;
     position: relative;
     float: left;
     top: 50%;
-        padding-right: 20px;
+    padding-right: 20px;
 
 }
 
@@ -246,7 +333,8 @@ text-transform: capitalize;
     position: relative;
     float: left;
     top: 30%;
-        padding-right: 20px;}
+    padding-right: 20px;
+}
 
 /*
     width: 120px;
@@ -262,10 +350,10 @@ text-transform: capitalize;
 
 
 
-.desc{
+.desc {
     position: absolute;
     top: 450px;
-    left: 30%;
+    padding: 0 20px;
 
 }
 
@@ -290,7 +378,7 @@ text-transform: capitalize;
 }
 
 .modal-wonderimg1 {
-      padding: 5px;
+    padding: 5px;
     width: 300px;
     height: 300px;
 
@@ -298,7 +386,7 @@ text-transform: capitalize;
 }
 
 .modal-wonderimg2 {
-      padding: 5px;
+    padding: 5px;
     width: 300px;
     height: 300px;
 
@@ -320,7 +408,7 @@ text-transform: capitalize;
     margin-right: auto;
 }
 
-.profile-name{
+.profile-name {
     font-size: 25px;
 
 
@@ -332,57 +420,57 @@ text-transform: capitalize;
     grid-gap: 1em;
 }
 
-.text{
-max-width: 100%;
-padding: 1% 10%;
-    }
+.text {
+    max-width: 100%;
+    padding: 1% 10%;
+}
 
 
 
 @media all and (max-width: 410px) {
-       #wonders{
+    #wonders {
         font-size: 30px;
     }
 
-    .modal-images img{
+    .modal-images img {
         margin-top: 25px;
         max-width: 50%;
         height: auto;
-}
+    }
 
-    .desc{
+    .desc {
         position: absolute;
         top: 120px;
         left: 200px;
     }
 
-    .desc3{
+    .desc3 {
         position: absolute;
         left: 35%;
     }
 
-    .modal-camera{
+    .modal-camera {
         width: 50%;
     }
 
-    .modal-money{
+    .modal-money {
         width: 50%;
     }
 
-    .modal-state{
+    .modal-state {
         width: 50%;
     }
 
     .desc2 {
-    position: absolute;
-    top: 350px;
-    left: 200px;
-}
-
-
+        position: absolute;
+        top: 500px;
+        left: 200px;
     }
 
-@media all and (min-width: 400px) {
+
+}
+
+@media all and (min-width: 410px) {
     .wonderimg {
         width: 80%;
         display: block;
@@ -390,100 +478,63 @@ padding: 1% 10%;
         margin-right: auto;
     }
 
-
+    .modal-images img{
+        width: 100%;
+        height: auto;
+    }
 }
 
 
 @media all and (min-width: 831px) {
-    .wonderimg {
-        width: 80%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+
+
+    .modal-images {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
     }
 
-.modal-images{
-display: grid;
 
-}
-}
+#wrapper {
+        display: flex;
+    }
 
+    .desc {
 
-/*NAVIGATION*/
-nav>ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-    position: absolute;
-    top:0;
-    z-index: 2;
-  overflow: hidden;
-    width:100vw;
-     background-color: #253031;
+        margin-top: 50px;
 
+    }
 
-}
+    .desc2 {
+        margin-top: 30px;
+        display: flex;
 
-li {
-    background-color: #253031;
-  float: left;
-    padding-right: 20px;
-}
+    }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+    .modal-camera{
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
+        max-width: 100%;
+          height: 100%;
+    }
 
-#symbols {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1em;
+     .modal-money{
+        width: 100px;
+         height: 100%;
+    }
+
+    .modal-state{
+        width: 30px;
+          height: 100%;
+    }
+
+    .picons{
+        margin-top: -5px;
+        margin-left: -14px;
+        margin-right: 80px;
+        padding: 5px;
+
+    }
 }
 
-.symbol-article {
-   border: 2px solid #5B7553;
-}
 
-.symbol-text {
-    margin-top: 0px;
-    font-size: 14px;
-
-}
-
-.symbol-text1 {
-    margin-top: -19px;
-    margin-bottom: 25px;
-    font-size: 14px;
-}
-
-.symbol-header {
-   color: #5B7553;
-    font-size: 23px;
-
-}
-/*.test{
-    background-color: red;
-    padding: 1em;
-}
-.tooltiptext{
-    visibility: hidden;
-    opacity: 0;
-    padding: 1em;
-    background-color: white;
-}
-.modal-camera:hover {
-  border: 2px solid red;
-}/*
-.modal-camera:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}*/
