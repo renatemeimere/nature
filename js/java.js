@@ -30,7 +30,9 @@
             const link = document.createElement('a');
             link.textContent=row.gsx$category.$t;
             link.href="#"+row.gsx$category.$t;
-            h3.appendChild(link)
+            const li = document.createElement('li');
+            li.appendChild(link)
+            document.querySelector(".dropout").appendChild(li)
         }
 
 
@@ -38,8 +40,11 @@
     function showDetails(oneObject){
         modal.querySelector(".modal-name").textContent = oneObject.gsx$title.$t;
         modal.querySelector(".modal-wonderimg").src = "images/" + oneObject.gsx$image.$t;
+         modal.querySelector(".modal-wonderimg1").src = "images/" + oneObject.gsx$modalimage1.$t;
+         modal.querySelector(".modal-wonderimg2").src = "images/" + oneObject.gsx$modalimage2.$t;
         modal.querySelector(".modal-size").textContent = "Size: " + oneObject.gsx$size.$t;
 	    modal.querySelector(".modal-year").textContent = "Year: " + oneObject.gsx$yearbuild.$t;
+
 	    modal.querySelector(".modal-funfact").textContent = "Fun Fact: " + oneObject.gsx$funfacts.$t;
         modal.querySelector(".modal-state").src = "images/" + oneObject.gsx$state.$t;
         modal.querySelector(".modal-camera").src = "images/" + oneObject.gsx$experience.$t;
@@ -55,10 +60,10 @@
 	    let clone = template.cloneNode(true);
 	    clone.querySelector(".name").textContent = oneObject.gsx$title.$t;
 	    clone.querySelector(".TypeOfWonder").textContent = oneObject.gsx$typeofwonder.$t;
-	    clone.querySelector(".TypeOfWonder").textContent = oneObject.gsx$typeofwonder.$t;
+        clone.querySelector(".TypeOfWonder").textContent = oneObject.gsx$typeofwonder.$t;
 	    clone.querySelector(".wonderimg").src = "images/" + oneObject.gsx$image.$t;
 	    clone.querySelector(".flag").src = "images/flag/" + oneObject.gsx$location.$t;
-        clone.querySelector("button").addEventListener("click", () => {
+        clone.querySelector("article").addEventListener("click", () => {
             showDetails(oneObject);
         })
 

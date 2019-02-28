@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
 
 html {
-    scroll-behavior: smooth;}
+    scroll-behavior: smooth;
+}
 
-.header{
+.header {
     background-image: url(images/52998006_1034023670132010_5857440183120560128_n.jpg);
     background-repeat: no-repeat;
     width: 100%;
@@ -12,9 +17,9 @@ html {
     position: relative;
 }
 
-.logo{
+.logo {
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 150px;
@@ -26,9 +31,15 @@ img {
 
 
 body {
-    font-family: 'Lato', sans-serif;
+   font-family: 'Raleway', sans-serif;
     background-color: #e6e6e6;
 
+}
+
+#explanation {
+    text-align: center;
+    margin-top: -60px;
+    margin-bottom: 40px;
 }
 
 
@@ -39,10 +50,15 @@ section {
 }
 
 section h2 {
+font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
+    font-size: 25px;
     grid-column: 1/-1;
+    color: #253031;
 }
 
 article {
+    cursor: pointer;
     padding: 2px;
     position: relative;
     padding: 1em;
@@ -55,26 +71,26 @@ article {
     font-size: 2.5em;
 }
 
-.manbuild{
+.manbuild {
     text-align: center;
     padding-bottom: auto;
     padding-top: 60px;
-        font-size: 2.5em;
+    font-size: 2.5em;
 }
 
 #wonders {
+    font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
     text-align: center;
     position: relative;
-
-    bottom: 70px;
-    font-size: 2em;
+    bottom: 90px;
+    font-size: 2.5em;
 
 }
 
 
 h2 {
     font-size: 40px;
-    text-transform: capitalize;
     text-align: center;
 }
 
@@ -90,7 +106,7 @@ h2 {
     top: 35px
 }
 
-#more{
+#more {
     font-size: 20px;
     border-radius: 10px;
     cursor: pointer;
@@ -108,25 +124,124 @@ h2 {
 
 
 
-h1{
+h1 {
     color: #5b7553;
 
 }
 
+/*////////////// NAVIGATION //////////////*/
+
+/*NAVIGATION*/
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    overflow: hidden;
+    width: 100vw;
+    background-color: #253031;
 
 
-h3 a {
-    padding: 10px;
-    color: black;
+}
+
+li {
+    font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
+    background-color: #253031;
+    float: left;
+    padding-right: 20px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.3em;
-    display:block;
 }
 
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+#symbols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+.symbol-article {
+    border: 2px solid #5B7553;
+}
+
+.symbol-text {
+    margin-top: 0px;
+    font-size: 14px;
 
 }
 
+.symbol-text1 {
+    margin-top: -19px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.symbol-header {
+    color: #5B7553;
+    font-size: 23px;
+
+}
+
+/*.test{
+    background-color: red;
+    padding: 1em;
+}
+.tooltiptext{
+    visibility: hidden;
+    opacity: 0;
+    padding: 1em;
+    background-color: white;
+}
+.modal-camera:hover {
+  border: 2px solid red;
+}/*
+.modal-camera:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}*/
+
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #5b7553;
+    color: #FFFFFF;
+}
+
+nav li ul {
+    display: none;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    text-transform: capitalize;
+    display: block;
+    float: none !important;
+    /* newly added */
+    height: auto;
+    /* newly added */
+    line-height: 34px;
+    /* newly added */
+
+}
 
 /* MOOOODAAAALLLLL*/
 
@@ -145,6 +260,7 @@ h3 a {
 .modal-bg {
     position: fixed;
     top: 0;
+    overflow: scroll;
     left: 0;
     height: 100%;
     width: 1500px;
@@ -171,12 +287,10 @@ h3 a {
 
 
 .modal-category {
-    padding: 5px;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 400px;
-    right: 20px;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+
 }
 
 /*.modal-state {
@@ -186,12 +300,24 @@ h3 a {
     left: 30px;
 }*/
 
-
-.modal-flag{
-    width: 40px;
+.desc3 {
     position: absolute;
-    left: 30px;
-    top: 400px;
+    top: 55px;
+    left: 45%;
+
+
+}
+
+.modal-name {
+    font-family: 'Major Mono Display', monospace;
+     text-transform: lowercase;
+    text-align: center;
+}
+
+.modal-flag {
+    padding: 5px;
+    width: 40px;
+
 }
 
 .modal-state {
@@ -208,7 +334,7 @@ h3 a {
     position: relative;
     float: left;
     top: 50%;
-        padding-right: 20px;
+    padding-right: 20px;
 
 }
 
@@ -217,7 +343,8 @@ h3 a {
     position: relative;
     float: left;
     top: 30%;
-        padding-right: 20px;
+    padding-right: 20px;
+}
 
 /*
     width: 120px;
@@ -230,18 +357,21 @@ h3 a {
     margin-left: -130px;
     margin-bottom: -50px;
 */
-}
 
 
-.desc{
+
+.desc {
     position: absolute;
     top: 450px;
+    padding: 0 20px;
 
 }
 
 .desc2 {
     position: absolute;
     top: 600px;
+
+
     display: inline;
 }
 
@@ -249,36 +379,32 @@ h3 a {
     width: 100%;
 }
 
+
 .modal-wonderimg {
+    padding: 5px;
     width: 300px;
     height: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 
 }
 
-
-@media all and (min-width: 400px) {
-    .wonderimg {
-        width: 80%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-
-@media all and (min-width: 831px) {
-    .wonderimg {
-        width: 80%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.modal-wonderimg1 {
+    padding: 5px;
+    width: 300px;
+    height: 300px;
 
 
 }
+
+.modal-wonderimg2 {
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+
+
+
+}
+
+/*///////////////////////////// MEET THE TEAM /////////////////////////*/
 
 .about {
     text-align: center
@@ -292,86 +418,175 @@ h3 a {
     margin-right: auto;
 }
 
+.profile-name {
+    font-size: 25px;
+
+
+}
+
 .main-about {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1em;
 }
 
-.text{
-max-width: 100%;
-padding: 1% 10%;
+.text {
+    max-width: 100%;
+    padding: 1% 10%;
+}
+
+
+
+@media all and (max-width: 410px) {
+    #wonders {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    .modal-images img {
+        margin-top: 25px;
+        max-width: 50%;
+        height: auto;
+    }
+
+    .desc {
+        position: absolute;
+        top: 120px;
+        left: 200px;
+    }
+
+    .desc3 {
+        position: absolute;
+        left: 35%;
+    }
+
+    .modal-camera {
+        width: 50%;
+    }
+
+    .modal-money {
+        width: 50%;
+    }
+
+    .modal-state {
+        width: 20%;
+    }
+
+    .desc2 {
+        position: absolute;
+        top: 500px;
+        left: 200px;
     }
 
 
-/*NAVIGATION*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
 }
 
-li {
-  float: left;
-    padding-right: 20px;
+@media all and (min-width: 410px) {
+    .wonderimg {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .modal-images img{
+        width: 100%;
+        height: auto;
+    }
+
+
+    .modal-images img {
+        margin-top: 25px;
+        max-width: 30%;
+        height: auto;
+    }
+
+    .desc {
+        position: absolute;
+        top: 320px;
+
+
+    }
+
+    .desc3 {
+        position: absolute;
+        left: 40%;
+    }
+
+    .modal-camera {
+        width: 50%;
+    }
+
+    .modal-money {
+        width: 50%;
+    }
+
+    .modal-state {
+        width: 20%;
+    }
+
+    .desc2 {
+        position: absolute;
+        top: 500px;
+        left: 40px;
+    }
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+
+@media all and (min-width: 831px) {
+
+
+    .modal-images {
+        margin-top: 40px;}
+
+
+#wrapper {
+        display: flex;
+    }
+
+    .desc {
+
+        margin-top: 150px;
+
+    }
+
+
+
+    .desc3 {
+        position: absolute;
+        left: 45%;
+        margin-top: 10px;
+    }
+
+    .desc2 {
+        margin-top: 100px;
+        display: flex;
+
+    }
+
+    .modal-camera{
+
+        max-width: 100px;
+          height: 100%;
+    }
+
+     .modal-money{
+        width: 100px;
+         height: 100%;
+    }
+
+    .modal-state{
+        width: 30px;
+          height: 100%;
+    }
+
+    .picons{
+        margin-top: -5px;
+        margin-left: -14px;
+        margin-right: 80px;
+        padding: 5px;
+
+    }
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
 
-#symbols {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1em;
-}
-
-.symbol-article {
-   border: 2px solid #5B7553;
-}
-
-.symbol-text {
-    margin-top: 0px;
-    font-size: 14px;
-
-}
-
-.symbol-text1 {
-    margin-top: -19px;
-    margin-bottom: 25px;
-    font-size: 14px;
-}
-
-.symbol-header {
-   color: #5B7553;
-    font-size: 23px;
-
-}
-/*.test{
-    background-color: red;
-    padding: 1em;
-}
-.tooltiptext{
-    visibility: hidden;
-    opacity: 0;
-    padding: 1em;
-    background-color: white;
-}
-.modal-camera:hover {
-  border: 2px solid red;
-}/*
-.modal-camera:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}*/
