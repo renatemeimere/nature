@@ -39,10 +39,13 @@ section {
 }
 
 section h2 {
+    font-size: 25px;
     grid-column: 1/-1;
+    text-decoration: underline;
 }
 
 article {
+    cursor: pointer;
     padding: 2px;
     position: relative;
     padding: 1em;
@@ -182,12 +185,10 @@ text-transform: capitalize;
 
 
 .modal-category {
-    padding: 5px;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 400px;
-    right: 20px;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+
 }
 
 /*.modal-state {
@@ -197,12 +198,21 @@ text-transform: capitalize;
     left: 30px;
 }*/
 
+.desc3{
+   position: absolute;
+    top: 55px;
+    left: 45%;
+
+
+}
+.modal-name{
+    text-align: center;
+}
 
 .modal-flag{
+    padding: 5px;
     width: 40px;
-    position: absolute;
-    left: 30px;
-    top: 400px;
+
 }
 
 .modal-state {
@@ -228,7 +238,7 @@ text-transform: capitalize;
     position: relative;
     float: left;
     top: 30%;
-        padding-right: 20px;
+        padding-right: 20px;}
 
 /*
     width: 120px;
@@ -241,7 +251,7 @@ text-transform: capitalize;
     margin-left: -130px;
     margin-bottom: -50px;
 */
-}
+
 
 
 .desc{
@@ -260,12 +270,29 @@ text-transform: capitalize;
     width: 100%;
 }
 
+
 .modal-wonderimg {
+    padding: 5px;
     width: 300px;
     height: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+}
+
+.modal-wonderimg1 {
+      padding: 5px;
+    width: 300px;
+    height: 300px;
+
+
+}
+
+.modal-wonderimg2 {
+      padding: 5px;
+    width: 300px;
+    height: 300px;
+
+
+
 }
 
 /*///////////////////////////// MEET THE TEAM /////////////////////////*/
@@ -327,7 +354,10 @@ padding: 1% 10%;
         margin-right: auto;
     }
 
-
+.modal-images{
+    display: flex;
+    padding: 10px 100px;
+}
 }
 
 
@@ -340,11 +370,14 @@ nav>ul {
     top:0;
     z-index: 2;
   overflow: hidden;
+    width:100vw;
+     background-color: #253031;
+
 
 }
 
 li {
-    background-color: rgba(0,0,0, .4);
+    background-color: #253031;
   float: left;
     padding-right: 20px;
 }
