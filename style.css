@@ -361,10 +361,22 @@ padding: 1% 10%;
         left: 35%;
     }
 
+    .modal-camera{
+        width: 50%;
+    }
+
+    .modal-money{
+        width: 50%;
+    }
+
+    .modal-state{
+        width: 50%;
+    }
+
     .desc2 {
     position: absolute;
     top: 350px;
-        left: 200px;
+    left: 200px;
 }
 
 
